@@ -1,0 +1,236 @@
+@font-face {
+    font-family: myFont;
+    src: url(GiveYouGlory.ttf);
+}
+
+body {
+    font-family: myFont;
+    font-size: 20px;
+    background-color: #FFBF00;
+    margin: 0px;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    margin: 70px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    flex-basis: 100px;
+    margin-bottom: 50px;
+}
+
+header span {
+    flex-basis: 30%;
+    padding: 5px;
+    margin-left: 30px;
+    align-self: center;
+}
+
+nav {
+    flex-basis: 70%; 
+    display: flex;  
+}
+
+nav ul {
+    flex-basis: 100%;
+    display: flex;
+    margin: 0px;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+nav li {
+    align-self: center;
+    flex-basis: 20%;
+    margin-right: 30px;                                                                      
+}
+
+h1 {
+    color: white;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: #FFBF00;
+    cursor: pointer;
+}
+
+header a:visited {
+    color: white
+}
+
+.introduction, .childhood, .growingUp, .evolving, .fun {
+    margin: 0px 70px 70px 50px;
+    box-sizing: border-box;
+    background: #E7E7DA;
+    padding: 30px;
+    /* justify-content: space-around;   */
+}
+.introduction {
+    text-align: center;
+}
+
+h2, p {
+    margin: 0px;
+}
+
+.childhood {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.childhood h2 {
+    text-align: center;
+}
+.childhood article {
+    flex-basis: 50%;
+}
+
+.childhood div {
+    flex-basis: 50%;
+}
+
+.childhood img {
+    box-shadow: 7px 7px 18px -2px rgba(0,0,0,0.75);
+}
+
+#babyImg {
+    z-index: 2;
+    position: relative;
+    top: 10px;
+    left: 60px;
+}
+
+.childhood div {
+    transition: width 2s, height 2s;
+}
+
+#babyImg:hover {
+    background-size: auto;
+}   
+
+#atSchool {
+    position: relative;
+    z-index: 1;
+    top: 30px;
+}
+
+.growingUp {
+    text-align: center;
+}
+
+.growingUp h2 {
+    text-align: center;
+}
+
+.evolving h2 {
+    text-align: center;
+}
+
+.evolving article {
+    padding-bottom: 5px;
+}
+
+.evolving {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.itPics {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.itPics div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: white;
+}
+
+.itPics img {
+    width: 300px;
+    height: 225;
+}
+
+.itPics figcaption {
+    text-align: center;
+}
+
+.links {
+    padding-top: 15px;
+}
+
+.evolving nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* 
+.evolving nav ul {
+    display: flex;
+} */
+
+.evolving nav a {
+    text-decoration: none;
+    color:white;
+    display: block;
+    background: black;
+}
+
+.evolving nav a:hover {
+    background: #FFBF00;
+    cursor: pointer;
+}
+
+.fun {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: inline-block; */
+}
+
+.fun h3 {
+    text-align: center;
+}
+.fun div {
+    display: flex;
+    justify-content: baseline;
+}
+
+.fun form {
+    margin: 13px;
+    box-sizing: border-box;
+}
+
+.fun button, #subscribe {
+    border-radius: 30px;
+    background: #FFBF00;
+}
+
+.fun button:hover {
+    cursor: pointer;
+}
+
+footer {
+    /* flex-basis: 10%; */
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer img {
+    padding-top: 10px;   
+    width: 35px;
+    height: 35px;
+}
+
